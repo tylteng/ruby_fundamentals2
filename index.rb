@@ -14,6 +14,7 @@ puts new_number
 
 puts "-" * 30
 
+
 # Exercise 2
 def negative?(number)
   if number > 0
@@ -28,6 +29,7 @@ puts negative?(900)
 puts negative?(-1)
 
 puts "-" * 30
+
 
 # Exercise 3
 puts "Plug in a number."
@@ -45,6 +47,7 @@ puts is_even?(number_yours)
 
 puts "-" * 30
 
+
 # Exercise 4
 puts "What is your name?"
 name = gets.chomp
@@ -57,4 +60,16 @@ def length(name)
   end
 end
 
-puts length('name')
+puts length(name)
+
+puts "-" * 30
+
+
+# Exercise 5
+puts "What is your name?"
+name_your = gets.chomp
+
+def greet_backwards(name)
+  return name.reverse + name.reverse
+end
+puts"Hello #{greet_backwards(name_your)}! Welcome home."
